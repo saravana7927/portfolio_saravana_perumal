@@ -131,19 +131,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/saravana-perumal-software-developer/" class="social-link">
+            <a href="https://www.linkedin.com/in/saravana-perumal-software-developer/" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/saravana7927" class="social-link">
+            <a href="https://github.com/saravana7927" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://wa.me/916382553597" class="social-link">
+            <a href="https://wa.me/916382553597" class="social-link" target="_blank" rel="noopener noreferrer">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
@@ -787,11 +787,12 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
+          <!-- TODO: Submit form once to receive encrypted token endpoint from FormSubmit (e.g. https://formsubmit.co/your-token-hash) to hide email from HTML source -->
           <form action="https://formsubmit.co/saravana.s.perumal@gmail.com" method="POST" class="form" data-form>
-            <!-- Recommended Hidden Fields -->
+            <!-- Anti-spam & honeypot -->
+            <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
-            
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -805,11 +806,6 @@
               <span>Send Message</span>
             </button>
           </form>
-
-          <!-- Include Ionicons -->
-          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 
         </section>
 
