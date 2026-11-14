@@ -4,6 +4,9 @@ AGENTS.md
 CLAUDE.md
 .cursorrules
 
+# Graphify output
+graphify-out/
+
 # Dependencies
 node_modules/
 
