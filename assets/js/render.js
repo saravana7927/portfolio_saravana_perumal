@@ -193,7 +193,9 @@ async function renderProjects() {
 
     const categorySet = [];
     visibleProjects.forEach(item => {
-      const cats = item.category ? item.category.split(/\s*[/,]\s*/) : [];
+      const cats = Array.isArray(item.category)
+        ? item.category
+        : (typeof item.category === 'string' ? item.category.split(/\s*[/,]\s*/) : []);
       cats.forEach(c => {
         const trimmed = c.trim();
         if (trimmed && !categorySet.includes(trimmed)) {
@@ -232,7 +234,9 @@ async function renderProjects() {
 
     if (projectList) {
       projectList.innerHTML = visibleProjects.map(item => {
-        const cats = item.category ? item.category.split(/\s*[/,]\s*/) : [];
+        const cats = Array.isArray(item.category)
+          ? item.category
+          : (typeof item.category === 'string' ? item.category.split(/\s*[/,]\s*/) : []);
         const categorySlugs = cats.map(toSlug).join(' ');
         const projectUrl = item.demo_url || item.github_url || '';
         const isGitHub = Boolean(item.github_url && !item.demo_url);

@@ -1,0 +1,235 @@
+backend:
+  name: github
+  repo: saravana7927/portfolio_saravana_perumal
+  branch: version-1-nov-2026
+  commit_messages:
+    create: 'Create {{collection}} {{slug}}'
+    update: 'Update {{collection}} {{slug}}'
+    delete: 'Delete {{collection}} {{slug}}'
+    uploadMedia: 'Upload {{path}}'
+    deleteMedia: 'Delete {{path}}'
+
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+publish_mode: simple
+
+collections:
+  - name: site
+    label: Site Content
+    files:
+      - file: data/profile.json
+        name: profile
+        label: Profile
+        format: json
+        fields:
+          - label: Full Name
+            name: name
+            widget: string
+          - label: Headline
+            name: headline
+            widget: string
+            hint: Professional title shown below your name
+          - label: Location
+            name: location
+            widget: string
+            hint: City and country
+          - label: Email Address
+            name: email
+            widget: string
+          - label: Phone Number
+            name: phone
+            widget: string
+            hint: Contact number including country code
+          - label: Availability
+            name: availability
+            widget: string
+            hint: Status badge text shown on sidebar
+          - label: Availability Text
+            name: availability_text
+            widget: string
+            hint: Fallback availability string
+          - label: Social Profiles
+            name: socials
+            widget: list
+            summary: '{{fields.platform}} - {{fields.url}}'
+            fields:
+              - label: Platform
+                name: platform
+                widget: string
+              - label: Profile URL
+                name: url
+                widget: string
+              - label: Icon Name
+                name: icon
+                widget: string
+                hint: Ionicons identifier (e.g. logo-linkedin, logo-github, logo-whatsapp)
+
+      - file: data/about.json
+        name: about
+        label: About Me
+        format: json
+        fields:
+          - label: Paragraphs
+            name: paragraphs
+            widget: list
+            field:
+              label: Paragraph
+              name: paragraph
+              widget: text
+            hint: Descriptive paragraphs displayed in About Me section
+
+      - file: data/services.json
+        name: services
+        label: Services
+        format: json
+        fields:
+          - label: Services List
+            name: items
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - label: Service Title
+                name: title
+                widget: string
+              - label: Description
+                name: text
+                widget: text
+              - label: Icon Name
+                name: icon
+                widget: string
+                hint: Ionicons icon identifier (e.g. code-slash-outline, chatbubbles-outline)
+
+      - file: data/experience.json
+        name: experience
+        label: Experience
+        format: json
+        fields:
+          - label: Experience Items
+            name: items
+            widget: list
+            summary: '{{fields.role}} - {{fields.company}}'
+            fields:
+              - label: Job Title / Role
+                name: role
+                widget: string
+              - label: Company Name
+                name: company
+                widget: string
+              - label: Employment Period
+                name: period
+                widget: string
+                hint: Date range (e.g. Jan 2025 — Present)
+              - label: Location
+                name: location
+                widget: string
+                required: false
+                hint: Location or work mode (e.g. Remote, Chennai, India)
+              - label: Accomplishments
+                name: bullets
+                widget: list
+                field:
+                  label: Bullet Point
+                  name: bullet
+                  widget: string
+                hint: Key responsibilities and achievements
+
+      - file: data/education.json
+        name: education
+        label: Education
+        format: json
+        fields:
+          - label: Education Items
+            name: items
+            widget: list
+            summary: '{{fields.school}}'
+            fields:
+              - label: Institution
+                name: school
+                widget: string
+              - label: Period
+                name: period
+                widget: string
+                hint: Years attended (e.g. 2020 - 2024)
+              - label: Degree & Details
+                name: degree
+                widget: string
+                hint: Degree title, specialization, and GPA
+
+      - file: data/skills.json
+        name: skills
+        label: Skills
+        format: json
+        fields:
+          - label: Skill Groups
+            name: groups
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - label: Group Name
+                name: name
+                widget: string
+                hint: Category heading (e.g. Frontend, Mobile, Integration, AI Tooling, Tools, Also worked with)
+              - label: Skills
+                name: items
+                widget: list
+                field:
+                  label: Skill
+                  name: item
+                  widget: string
+                hint: Technology or skill name
+
+      - file: data/projects.json
+        name: projects
+        label: Projects
+        format: json
+        fields:
+          - label: Projects
+            name: items
+            widget: list
+            summary: '{{fields.title}} ({{fields.category}})'
+            fields:
+              - label: Project Title
+                name: title
+                widget: string
+              - label: Category
+                name: category
+                widget: select
+                options:
+                  - AI Interfaces
+                  - Web Apps
+                  - Mobile
+                hint: Filter category tab for this project
+              - label: Tags
+                name: tags
+                widget: list
+                field:
+                  label: Tag
+                  name: tag
+                  widget: string
+                hint: Tech stack badges (e.g. React, Flutter, Dart)
+              - label: Role
+                name: role
+                widget: string
+                hint: Your role on the project (e.g. Frontend Developer)
+              - label: Description
+                name: description
+                widget: text
+                hint: Short project overview
+              - label: Demo URL
+                name: demo_url
+                widget: string
+                required: false
+                hint: Public link to live demo or APK (leave empty if none)
+              - label: GitHub URL
+                name: github_url
+                widget: string
+                required: false
+                hint: Public link to source repository (leave empty if none)
+              - label: Image
+                name: image
+                widget: image
+                hint: Project thumbnail image path
+              - label: Visible
+                name: visible
+                widget: boolean
+                hint: Set to false to hide this project without deleting it
