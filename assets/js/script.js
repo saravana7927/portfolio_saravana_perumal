@@ -64,9 +64,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // Filter functionality
 const filterSelect = document.querySelector('[data-select]');
 const selectValue = document.querySelector('[data-selecct-value]');
-const filterButtons = document.querySelectorAll('[data-filter-btn]');
-const selectItems = document.querySelectorAll('[data-select-item]');
-const portfolioItems = document.querySelectorAll('.project-list .project-item');
 
 if (filterSelect) {
   filterSelect.addEventListener('click', function () {
@@ -74,48 +71,57 @@ if (filterSelect) {
   });
 }
 
-const filterFunc = function (selectedValue) {
-  for (let i = 0; i < portfolioItems.length; i++) {
-    const item = portfolioItems[i];
-    const itemCategory = (item.getAttribute('data-category') || '').toLowerCase();
-    const categories = itemCategory.split(/\s+/);
-    if (selectedValue === 'all' || categories.includes(selectedValue)) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
-  }
-};
+const initPortfolioFilter = function () {
+  const filterButtons = document.querySelectorAll('[data-filter-btn]');
+  const selectItems = document.querySelectorAll('[data-select-item]');
+  const portfolioItems = document.querySelectorAll('.project-list .project-item');
 
-filterButtons.forEach(button => {
-  button.addEventListener('click', function () {
-    const category = (this.getAttribute('value') || this.value || '').trim().toLowerCase();
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    this.classList.add('active');
-    if (selectValue) {
-      selectValue.innerText = this.innerText;
-    }
-    filterFunc(category);
-  });
-});
-
-selectItems.forEach(item => {
-  item.addEventListener('click', function () {
-    const category = (this.getAttribute('value') || this.value || '').trim().toLowerCase();
-    if (selectValue) {
-      selectValue.innerText = this.innerText;
-    }
-    filterButtons.forEach(btn => {
-      const btnVal = (btn.getAttribute('value') || btn.value || '').trim().toLowerCase();
-      if (btnVal === category) {
-        btn.classList.add('active');
+  const filterFunc = function (selectedValue) {
+    for (let i = 0; i < portfolioItems.length; i++) {
+      const item = portfolioItems[i];
+      const itemCategory = (item.getAttribute('data-category') || '').toLowerCase();
+      const categories = itemCategory.split(/\s+/);
+      if (selectedValue === 'all' || categories.includes(selectedValue)) {
+        item.classList.add('active');
       } else {
-        btn.classList.remove('active');
+        item.classList.remove('active');
+      }
+    }
+  };
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const category = (this.getAttribute('value') || this.value || '').trim().toLowerCase();
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      if (selectValue) {
+        selectValue.innerText = this.innerText;
+      }
+      filterFunc(category);
+    });
+  });
+
+  selectItems.forEach(item => {
+    item.addEventListener('click', function () {
+      const category = (this.getAttribute('value') || this.value || '').trim().toLowerCase();
+      if (selectValue) {
+        selectValue.innerText = this.innerText;
+      }
+      filterButtons.forEach(btn => {
+        const btnVal = (btn.getAttribute('value') || btn.value || '').trim().toLowerCase();
+        if (btnVal === category) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      filterFunc(category);
+      if (filterSelect) {
+        filterSelect.classList.remove('active');
       }
     });
-    filterFunc(category);
-    if (filterSelect) {
-      filterSelect.classList.remove('active');
-    }
   });
-});
+};
+
+window.initPortfolioFilter = initPortfolioFilter;
+initPortfolioFilter();

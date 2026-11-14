@@ -1,0 +1,26 @@
+{
+  "name": "Saravana Perumal",
+  "headline": "Frontend Engineer | React, Next.js, Angular | AI Assistant Interfaces",
+  "location": "Chennai, India",
+  "email": "saravana.s.perumal@gmail.com",
+  "phone": "+91 6382553597",
+  "availability": "Available for freelance",
+  "availability_text": "Available for freelance",
+  "socials": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/saravana-perumal-software-developer/",
+      "icon": "logo-linkedin"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/saravana7927",
+      "icon": "logo-github"
+    },
+    {
+      "platform": "WhatsApp",
+      "url": "https://wa.me/916382553597",
+      "icon": "logo-whatsapp"
+    }
+  ]
+}

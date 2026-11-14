@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "Frontend Development",
+      "text": "Modern, performant frontend architectures using React, Next.js, Angular, and TypeScript with responsive layouts and accessible components.",
+      "icon": "code-slash-outline"
+    },
+    {
+      "title": "AI Assistant Interfaces",
+      "text": "Conversational assistant UIs, clarification questions, agent responses, and follow-up flows using CopilotKit, AG-UI, and Claude Managed Agents.",
+      "icon": "chatbubbles-outline"
+    },
+    {
+      "title": "Mobile (Flutter)",
+      "text": "Cross-platform mobile apps and chatbot MVPs built with Flutter and Dart, with production releases to the Apple App Store.",
+      "icon": "phone-portrait-outline"
+    },
+    {
+      "title": "Auth and API Integration",
+      "text": "Secure frontend authentication flows, session handling, and REST API integration consuming services through Node.js gateways.",
+      "icon": "shield-checkmark-outline"
+    }
+  ]
+}

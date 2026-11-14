@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "name": "Frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "Angular",
+        "TypeScript",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Mobile",
+      "items": [
+        "Flutter",
+        "Dart"
+      ]
+    },
+    {
+      "name": "Integration",
+      "items": [
+        "REST APIs",
+        "Node.js",
+        "Authentication"
+      ]
+    },
+    {
+      "name": "AI Tooling",
+      "items": [
+        "CopilotKit",
+        "AG-UI",
+        "Claude Managed Agents"
+      ]
+    },
+    {
+      "name": "Tools",
+      "items": [
+        "Git",
+        "AWS",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "Also worked with",
+      "items": [
+        "Java",
+        "Spring Boot",
+        "OutSystems",
+        "SQL"
+      ]
+    }
+  ]
+}

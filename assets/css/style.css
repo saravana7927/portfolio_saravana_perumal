@@ -1060,6 +1060,14 @@ main {
   100% { transform: scale(1); }
 }
 
+.fallback-message {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  padding: 10px 0;
+  grid-column: 1 / -1;
+  list-style: none;
+}
+
 .project-item > a,
 .project-card-wrapper { width: 100%; }
 

@@ -60,11 +60,11 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Saravana Perumal">Saravana Perumal</h1>
+          <h1 class="name" title="" data-profile-name></h1>
 
-          <p class="title">Frontend Engineer | React, Next.js, Angular | AI Assistant Interfaces</p>
+          <p class="title" data-profile-headline></p>
 
-          <div class="freelance-badge">Available for freelance</div>
+          <div class="freelance-badge" data-profile-availability></div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -90,7 +90,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:saravana.s.perumal@gmail.com" class="contact-link">saravana.s.perumal@gmail.com</a>
+              <a href="#" class="contact-link" data-profile-email></a>
             </div>
 
           </li>
@@ -105,7 +105,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+916382553597" class="contact-link">+91 6382553597</a>
+              <a href="#" class="contact-link" data-profile-phone></a>
             </div>
 
           </li>
@@ -119,7 +119,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Chennai, India</address>
+              <address data-profile-location></address>
             </div>
 
           </li>
@@ -128,27 +128,7 @@
 
         <div class="separator"></div>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/saravana-perumal-software-developer/" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/saravana7927" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://wa.me/916382553597" class="social-link" target="_blank" rel="noopener noreferrer">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
+        <ul class="social-list" data-profile-socials></ul>
 
         <!-- TODO: Add resume.pdf to assets/ to display the download button -->
         <!--
@@ -219,12 +199,7 @@
           <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <section class="about-text">
-          <p>
-            Frontend Engineer with ~2 years of experience building modern web applications using React, Next.js, and Angular.
-            Specialized in designing conversational AI assistant interfaces, interactive agent flows, and responsive UI systems.
-            Experienced in integrating complex REST APIs, implementing robust authentication, and optimizing user workflows for performance and accessibility.
-          </p>
+        <section class="about-text" data-about-text>
         </section>
 
 
@@ -236,73 +211,7 @@
 
           <h3 class="h3 service-title">What I'm doing</h3>
 
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="code-slash-outline" style="font-size: 36px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Frontend Development</h4>
-
-                <p class="service-item-text">
-                  Modern, performant frontend architectures using React, Next.js, Angular, and TypeScript with responsive layouts and accessible components.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="chatbubbles-outline" style="font-size: 36px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Assistant Interfaces</h4>
-
-                <p class="service-item-text">
-                  Conversational assistant UIs, clarification questions, agent responses, and follow-up flows using CopilotKit, AG-UI, and Claude Managed Agents.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="phone-portrait-outline" style="font-size: 36px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile (Flutter)</h4>
-
-                <p class="service-item-text">
-                  Cross-platform mobile apps and chatbot MVPs built with Flutter and Dart, with production releases to the Apple App Store.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="shield-checkmark-outline" style="font-size: 36px; color: var(--orange-yellow-crayola); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Auth and API Integration</h4>
-
-                <p class="service-item-text">
-                  Secure frontend authentication flows, session handling, and REST API integration consuming services through Node.js gateways.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
+          <ul class="service-list" data-service-list></ul>
 
         </section>
 
@@ -353,27 +262,7 @@
             <h3 class="h3">Experience</h3>
           </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Developer &mdash; SmartSeas AI</h4>
-
-              <span>Jan 2025 &mdash; Present | Remote</span>
-
-              <div class="timeline-text">
-                <ul>
-                  <li>Sole frontend developer on a B2C application built with Next.js/React.</li>
-                  <li>Built AI assistant interfaces: clarification questions, agent responses, and follow-up flows (CopilotKit, AG-UI, Claude Managed Agents).</li>
-                  <li>Integrated REST APIs through a Node.js gateway; implemented robust authentication flows.</li>
-                  <li>Fixed security findings (VAPT, Dependabot) and shipped production hotfixes.</li>
-                  <li>Built and shipped a Flutter chatbot app to the Apple App Store.</li>
-                </ul>
-              </div>
-
-            </li>
-
-          </ol>
+          <ol class="timeline-list" data-experience-list></ol>
 
         </section>
 
@@ -387,21 +276,7 @@
             <h3 class="h3">Education</h3>
           </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">R.M.K COLLEGE OF ENGINEERING AND TECHNOLOGY</h4>
-
-              <span>2020 - 2024</span>
-
-              <p class="timeline-text">
-                B.E in Computer Science and Engineering - 8.29 CGPA
-              </p>
-
-            </li>
-
-          </ol>
+          <ol class="timeline-list" data-education-list></ol>
 
         </section>
 
@@ -410,59 +285,7 @@
 
           <h3 class="h3 skills-title">My skills</h3>
 
-          <div class="skills-list content-card">
-
-            <div class="skills-group">
-              <h4 class="skills-group-title">Frontend</h4>
-              <div class="skills-tags">
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Next.js</span>
-                <span class="skill-tag">Angular</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">JavaScript</span>
-              </div>
-            </div>
-
-            <div class="skills-group">
-              <h4 class="skills-group-title">Mobile</h4>
-              <div class="skills-tags">
-                <span class="skill-tag">Flutter</span>
-                <span class="skill-tag">Dart</span>
-              </div>
-            </div>
-
-            <div class="skills-group">
-              <h4 class="skills-group-title">Integration</h4>
-              <div class="skills-tags">
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Authentication</span>
-              </div>
-            </div>
-
-            <div class="skills-group">
-              <h4 class="skills-group-title">AI Tooling</h4>
-              <div class="skills-tags">
-                <span class="skill-tag">CopilotKit</span>
-                <span class="skill-tag">AG-UI</span>
-                <span class="skill-tag">Claude Managed Agents</span>
-              </div>
-            </div>
-
-            <div class="skills-group">
-              <h4 class="skills-group-title">Tools</h4>
-              <div class="skills-tags">
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Firebase</span>
-              </div>
-            </div>
-
-            <div class="skills-also-worked">
-              <p><strong>Also worked with:</strong> Java, Spring Boot, OutSystems, SQL</p>
-            </div>
-
-          </div>
+          <div class="skills-list content-card" data-skills-list></div>
 
         </section>
 
@@ -484,25 +307,7 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn value="all">All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn value="ai-interfaces">AI Interfaces</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn value="web-apps">Web Apps</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn value="mobile">Mobile</button>
-            </li>
-
-          </ul>
+          <ul class="filter-list" data-filter-list></ul>
 
           <div class="filter-select-box">
 
@@ -516,244 +321,11 @@
 
             </button>
 
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item value="all">All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item value="ai-interfaces">AI Interfaces</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item value="web-apps">Web Apps</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item value="mobile">Mobile</button>
-              </li>
-
-            </ul>
+            <ul class="select-list" data-select-list></ul>
 
           </div>
 
-          <ul class="project-list">
-
-            <!-- Superchat -->
-            <li class="project-item active" data-filter-item data-category="web-apps ai-interfaces">
-              <a href="https://github.com/saravana7927/superchat" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/superchat_thumbnail.png" alt="Superchat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Superchat</h3>
-
-                <p class="project-category">Web Apps / AI Interfaces</p>
-
-                <p class="project-desc">Real-time chat platform with room creation and responsive messaging interface.</p>
-                <p class="project-role">Role: Frontend Developer</p>
-                <div class="project-tags">
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">Firebase</span>
-                  <span class="project-tag">JavaScript</span>
-                </div>
-
-                <div class="project-links">
-                  <span class="project-link-btn">
-                    <ion-icon name="logo-github"></ion-icon> GitHub
-                  </span>
-                </div>
-
-              </a>
-            </li>
-
-            <!-- Clothing Bill Generator -->
-            <li class="project-item active" data-filter-item data-category="mobile">
-              <a href="https://drive.google.com/file/d/1ygcPPfAF5VOPW41HA4ATpHS0uOVIM_8n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/clothing_apk.png" alt="Clothing Bill Generator" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Clothing Bill Generator</h3>
-
-                <p class="project-category">Mobile</p>
-
-                <p class="project-desc">Cross-platform mobile bill generator application with receipt calculation and product tracking.</p>
-                <p class="project-role">Role: Mobile / Frontend Developer</p>
-                <div class="project-tags">
-                  <span class="project-tag">Flutter</span>
-                  <span class="project-tag">Mobile</span>
-                  <span class="project-tag">Dart</span>
-                </div>
-
-                <div class="project-links">
-                  <span class="project-link-btn">
-                    <ion-icon name="open-outline"></ion-icon> View Project
-                  </span>
-                </div>
-
-              </a>
-            </li>
-
-            <!-- Personal Finance Manager -->
-            <li class="project-item active" data-filter-item data-category="web-apps">
-              <a href="https://drive.google.com/file/d/1blBghHkqxrdHJ27JU-cLLP9AGYLqi-ic/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/personal_finance_manager_thumbnail.png" alt="Personal Finance Manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Personal Finance Manager</h3>
-
-                <p class="project-category">Web Apps</p>
-
-                <p class="project-desc">Financial tracking web application to manage income, expenses, and monthly budget analytics.</p>
-                <p class="project-role">Role: Frontend Developer</p>
-                <div class="project-tags">
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">JavaScript</span>
-                  <span class="project-tag">CSS</span>
-                </div>
-
-                <div class="project-links">
-                  <span class="project-link-btn">
-                    <ion-icon name="open-outline"></ion-icon> View Project
-                  </span>
-                </div>
-
-              </a>
-            </li>
-
-            <!-- Book Data (CRUD) -->
-            <li class="project-item active" data-filter-item data-category="web-apps">
-              <a href="https://drive.google.com/file/d/1j6W7nzDuyJ83PaG-9W6IhfcRKV60Rs3_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/book_data_thumbnail.png" alt="Book Data" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Book Data (CRUD)</h3>
-
-                <p class="project-category">Web Apps</p>
-
-                <p class="project-desc">Full-stack book inventory web application with comprehensive CRUD operations.</p>
-                <p class="project-role">Role: Software Developer</p>
-                <div class="project-tags">
-                  <span class="project-tag">Java</span>
-                  <span class="project-tag">Spring Boot</span>
-                  <span class="project-tag">REST API</span>
-                </div>
-
-                <div class="project-links">
-                  <span class="project-link-btn">
-                    <ion-icon name="open-outline"></ion-icon> View Project
-                  </span>
-                </div>
-
-              </a>
-            </li>
-
-            <!-- Email Sender -->
-            <li class="project-item active" data-filter-item data-category="web-apps">
-              <a href="https://drive.google.com/file/d/1v3NRrqmmtrB4h2eBqq9k7xSYvlmr83Xh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/email_sender_thumbnail.png" alt="Email Sender" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Email Sender</h3>
-
-                <p class="project-category">Web Apps</p>
-
-                <p class="project-desc">Automated email dispatch service and interface with attachment and templating support.</p>
-                <p class="project-role">Role: Software Developer</p>
-                <div class="project-tags">
-                  <span class="project-tag">Spring Boot</span>
-                  <span class="project-tag">Java</span>
-                  <span class="project-tag">REST API</span>
-                </div>
-
-                <div class="project-links">
-                  <span class="project-link-btn">
-                    <ion-icon name="open-outline"></ion-icon> View Project
-                  </span>
-                </div>
-
-              </a>
-            </li>
-
-
-
-            <!--
-              TODO: When ready, supply demo link, GitHub link and original screenshot to activate card: AI Chat UI Demo
-            -->
-            <!--
-            <li class="project-item active" data-filter-item data-category="ai-interfaces">
-              <div class="project-card-wrapper">
-                <figure class="project-img">
-                  <img src="./assets/images/icon-dev.svg" alt="AI Chat UI Demo" loading="lazy">
-                </figure>
-                <h3 class="project-title">AI Chat UI Demo</h3>
-                <p class="project-category">ai-interfaces</p>
-                <p class="project-desc">Conversational assistant UI supporting follow-up flows, clarification prompts, and streaming responses.</p>
-                <p class="project-role">Role: Frontend Engineer</p>
-                <div class="project-tags">
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">CopilotKit</span>
-                  <span class="project-tag">AG-UI</span>
-                  <span class="project-tag">TypeScript</span>
-                </div>
-              </div>
-            </li>
-            -->
-
-            <!--
-              TODO: When ready, supply demo link, GitHub link and original screenshot to activate card: Next.js Auth Application
-            -->
-            <!--
-            <li class="project-item active" data-filter-item data-category="web-apps">
-              <div class="project-card-wrapper">
-                <figure class="project-img">
-                  <img src="./assets/images/icon-dev.svg" alt="Next.js App with Authentication" loading="lazy">
-                </figure>
-                <h3 class="project-title">Next.js App with Auth</h3>
-                <p class="project-category">web-apps</p>
-                <p class="project-desc">Modern web application featuring complete user authentication flows and gateway REST API integration.</p>
-                <p class="project-role">Role: Frontend Developer</p>
-                <div class="project-tags">
-                  <span class="project-tag">Next.js</span>
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">Node.js</span>
-                  <span class="project-tag">REST API</span>
-                </div>
-              </div>
-            </li>
-            -->
-
-          </ul>
+          <ul class="project-list" data-project-list></ul>
 
         </section>
 
@@ -823,6 +395,7 @@
   <!--
     - custom js link
   -->
+  <script src="./assets/js/render.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <!--

@@ -1,0 +1,111 @@
+{
+  "items": [
+    {
+      "title": "Superchat",
+      "category": "AI Interfaces / Web Apps",
+      "tags": [
+        "React",
+        "Firebase",
+        "JavaScript"
+      ],
+      "role": "Frontend Developer",
+      "description": "Real-time chat platform with room creation and responsive messaging interface.",
+      "demo_url": "",
+      "github_url": "https://github.com/saravana7927/superchat",
+      "image": "./assets/images/superchat_thumbnail.png",
+      "visible": true
+    },
+    {
+      "title": "Clothing Bill Generator",
+      "category": "Mobile",
+      "tags": [
+        "Flutter",
+        "Mobile",
+        "Dart"
+      ],
+      "role": "Mobile / Frontend Developer",
+      "description": "Cross-platform mobile bill generator application with receipt calculation and product tracking.",
+      "demo_url": "https://drive.google.com/file/d/1ygcPPfAF5VOPW41HA4ATpHS0uOVIM_8n/view?usp=sharing",
+      "github_url": "",
+      "image": "./assets/images/clothing_apk.png",
+      "visible": true
+    },
+    {
+      "title": "Personal Finance Manager",
+      "category": "Web Apps",
+      "tags": [
+        "React",
+        "JavaScript",
+        "CSS"
+      ],
+      "role": "Frontend Developer",
+      "description": "Financial tracking web application to manage income, expenses, and monthly budget analytics.",
+      "demo_url": "https://drive.google.com/file/d/1blBghHkqxrdHJ27JU-cLLP9AGYLqi-ic/view?usp=sharing",
+      "github_url": "",
+      "image": "./assets/images/personal_finance_manager_thumbnail.png",
+      "visible": true
+    },
+    {
+      "title": "Book Data (CRUD)",
+      "category": "Web Apps",
+      "tags": [
+        "Java",
+        "Spring Boot",
+        "REST API"
+      ],
+      "role": "Software Developer",
+      "description": "Full-stack book inventory web application with comprehensive CRUD operations.",
+      "demo_url": "https://drive.google.com/file/d/1j6W7nzDuyJ83PaG-9W6IhfcRKV60Rs3_/view?usp=sharing",
+      "github_url": "",
+      "image": "./assets/images/book_data_thumbnail.png",
+      "visible": true
+    },
+    {
+      "title": "Email Sender",
+      "category": "Web Apps",
+      "tags": [
+        "Spring Boot",
+        "Java",
+        "REST API"
+      ],
+      "role": "Software Developer",
+      "description": "Automated email dispatch service and interface with attachment and templating support.",
+      "demo_url": "https://drive.google.com/file/d/1v3NRrqmmtrB4h2eBqq9k7xSYvlmr83Xh/view?usp=sharing",
+      "github_url": "",
+      "image": "./assets/images/email_sender_thumbnail.png",
+      "visible": true
+    },
+    {
+      "title": "AI Chat UI Demo",
+      "category": "AI Interfaces",
+      "tags": [
+        "React",
+        "CopilotKit",
+        "AG-UI",
+        "TypeScript"
+      ],
+      "role": "Frontend Engineer",
+      "description": "Conversational assistant UI supporting follow-up flows, clarification prompts, and streaming responses.",
+      "demo_url": "",
+      "github_url": "",
+      "image": "./assets/images/icon-dev.svg",
+      "visible": false
+    },
+    {
+      "title": "Next.js App with Auth",
+      "category": "Web Apps",
+      "tags": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "REST API"
+      ],
+      "role": "Frontend Developer",
+      "description": "Modern web application featuring complete user authentication flows and gateway REST API integration.",
+      "demo_url": "",
+      "github_url": "",
+      "image": "./assets/images/icon-dev.svg",
+      "visible": false
+    }
+  ]
+}

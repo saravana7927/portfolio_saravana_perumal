@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "role": "Software Developer",
+      "company": "SmartSeas AI",
+      "period": "Jan 2025 — Present",
+      "location": "Remote",
+      "bullets": [
+        "Sole frontend developer on a B2C application built with Next.js/React.",
+        "Built AI assistant interfaces: clarification questions, agent responses, and follow-up flows (CopilotKit, AG-UI, Claude Managed Agents).",
+        "Integrated REST APIs through a Node.js gateway; implemented robust authentication flows.",
+        "Fixed security findings (VAPT, Dependabot) and shipped production hotfixes.",
+        "Built and shipped a Flutter chatbot app to the Apple App Store."
+      ]
+    }
+  ]
+}
